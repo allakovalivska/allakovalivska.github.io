@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+
+    <link rel="shortcut icon" href="img/Logo-icon.jpg" type="image/x-icon">
+
+    <title>Continuous Glucose Monitors</title>
+</head>
+
+<body>
+    <header>
+        <div class="row nav-menu">
+            <div class="nav"><a href="index.html">NoCost CGM</a></div>
+            <div class="nav"><a href="https://www.nocostshoes.com/?url=nocostcgm">NoCost Shoes</a></div>
+        </div>
+    </header>
+
+    <div class="section-first" id="Top">
+        <div class="fullContainer pad-top-bottom-20">
+            <div class="row width100p pad-top-bottom-20 mar-0 pad-left-right-10">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6 transform-bg-color">
+                    <div class="pad-top-bottom-20" style="text-align: center;">
+                        <div>
+                            <div>
+                                <img src="img/Logo.png" alt="logo">
+                            </div>
+                            <div class="pad-left-right-40">
+                                <h1>
+                                    DO I QUALIFY FOR <b>CONTINUOUS GLUCOSE MONITOR</b> COVERAGE?
+                                </h1>
+                            </div>
+                            <h4>Complete the below survey to find out</h4>
+                        </div>
+                        <div class="gray-line"></div>
+                        <div>
+                            <div id="firstquestion" style="display: block;">
+                                <div class="pad-left-right-10">
+                                    <div class="question">1. Which products would you like to see if you are qualified
+                                        for?</div>
+                                    <div class="pad-top-bottom-20">
+                                        <div class="step-progress">
+                                            <div class="active-step" style="width:10%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: left; padding:0 20px;">
+                                        <div id="firstquestion-var1" class="d-flex align-items-center check-form"><input
+                                                type="checkbox"
+                                                value="Continuous Glucose Monitor (Freestyle Libre and Dexcom)"><span
+                                                class="checkbox">Continuous Glucose Monitor (Freestyle Libre and
+                                                Dexcom)</span></div>
+                                        <div id="firstquestion-var2" class="d-flex align-items-center check-form"><input
+                                                type="checkbox" value="Diabetic Shoes"><span class="checkbox">Diabetic
+                                                Shoes</span></div>
+                                        <div id="firstquestion-var3" class="d-flex align-items-center check-form"><input
+                                                type="checkbox" value="Both"><span class="checkbox">Both</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="secondquestion" style="display: none;">
+                                <div class="pad-left-right-10">
+                                    <div class="question">2. Do You Have Type 1 or Type 2 Diabetes?</div>
+                                    <div class="pad-top-bottom-20">
+                                        <div class="step-progress">
+                                            <div class="active-step" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: left; padding:0 20px;">
+                                        <div id="secondquestion-var1" class="d-flex align-items-center check-form">
+                                            <input type="radio" value="Type 1"><span class="checkbox">Type 1</span>
+                                        </div>
+                                        <div id="secondquestion-var2" class="d-flex align-items-center check-form">
+                                            <input type="radio" value="Type 2"><span class="checkbox">Type 2</span>
+                                        </div>
+                                        <div id="secondquestion-var3" class="d-flex align-items-center check-form">
+                                            <input type="radio" value="I don't know"><span class="checkbox">I don't
+                                                know</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="thirdquestion" style="display: none;">
+                                <div class="pad-left-right-10">
+                                    <div class="question">3. Is your A1C over 7?</div>
+                                    <div class="pad-top-bottom-20">
+                                        <div class="step-progress">
+                                            <div class="active-step" style="width: 60%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: left; padding:0 20px;">
+                                        <div id="thirdquestion-var1" class="d-flex align-items-center check-form"><input
+                                                type="radio" value="Yes"><span class="checkbox">Yes</span></div>
+                                        <div id="thirdquestion-var2" class="d-flex align-items-center check-form"><input
+                                                type="radio" value="No"><span class="checkbox">No</span></div>
+                                        <div id="thirdquestion-var3" class="d-flex align-items-center check-form"><input
+                                                type="radio" value="I don't know"><span class="checkbox">I don't
+                                                know</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="fourthquestion" style="display: none;">
+                                <div class="pad-left-right-10">
+                                    <div class="question">4. Do you take insulin?</div>
+                                    <div class="pad-top-bottom-20">
+                                        <div class="step-progress">
+                                            <div class="active-step" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: left; padding:0 20px;">
+                                        <div id="fourthquestion-var1" class="d-flex align-items-center check-form">
+                                            <input type="radio" value="Yes"><span class="checkbox">Yes</span></div>
+                                        <div id="fourthquestion-var2" class="d-flex align-items-center check-form">
+                                            <input type="radio" value="No"><span class="checkbox">No</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="fifthquestion" style="display: none;">
+                                <div class="pad-left-right-10">
+                                    <div class="question">5. Do you frequently adjust insulin based on your blood sugar
+                                        levels?</div>
+                                    <div class="pad-top-bottom-20">
+                                        <div class="step-progress">
+                                            <div class="active-step" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: left; padding:0 20px;">
+                                        <div id="fifthquestion-var1" class="d-flex align-items-center check-form"><input
+                                                type="radio" value="Yes"><span class="checkbox">Yes</span></div>
+                                        <div id="fifthquestion-var2" class="d-flex align-items-center check-form"><input
+                                                type="radio" value="No"><span class="checkbox">No</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="#"><img src="img/closemodal.webp" alt="Close"> </a>
+                                <div class="content">
+                                    <div class="popup-header">
+                                        <div style="font-weight: 600; line-height: 1.3em;">You may qualify for the
+                                            FreeStyle Libre 14 day system with no out of pocket cost. </div>
+                                        <div style="font-size: 20px;">Fill out the below form to find out if you qualify
+                                        </div>
+                                        <div style="font-weight: 600;">or Call&nbsp;<a href="tel:8552340638"
+                                                style="color: rgba(255, 255, 255, 0.79);font-weight: 600;">(855)
+                                                234-0638</a></div>
+                                        <div style="font-size: 16px;">Please answer as completely and accurately as
+                                            possible as it may affect your coverage options</div>
+                                    </div>
+                                    <form class="popup-form" action="thank-you.html" onsubmit="return validate()">
+                                        <div class="type-form1"><input type="text" class="form-control" id="first-name"
+                                                placeholder="Your Frist Name"></div>
+                                        <div class="type-form1"><input type="text" class="form-control" id="last-name"
+                                                placeholder="Your Last Name"></div>
+                                        <div class="type-form1"><input type="text" class="form-control" id="address"
+                                                placeholder="Your Address"></div>
+                                        <div class="type-form1"><input type="text" class="form-control" id="city"
+                                                placeholder="Your City"></div>
+                                        <div class="type-form1"><input type="text" class="form-control" id="state"
+                                                placeholder="Your State"></div>
+                                        <div class="type-form1"><input type="text" class="form-control" id="country"
+                                                placeholder="Your Country"></div>
+                                        <div class="type-form1"><input type="number" class="form-control" id="ZIP"
+                                                placeholder="Your ZIP"></div>
+
+                                        <div class="type-form2"><input type="email" class="form-control" id="email"
+                                                placeholder="Your Email"></div>
+                                        <div class="type-form2"><input type="text" class="form-control"
+                                                id="DateofBirth" placeholder="Your Date of Birth MM/DD/YYYY"></div>
+                                        <div class="type-form2"><input type="tel" class="form-control" id="phone"
+                                                placeholder="Your Phone Number"></div>
+                                        <div class="type-form2" style="color: #fff">The below information is optional,
+                                            however by filling it in we can give you an accurate answer much quicker.
+                                        </div>
+                                        <div class="type-form2"><input type="text" class="form-control"
+                                                id="PrimaryInsurance" placeholder="Your Primary Insurance"></div>
+                                        <div class="type-form2"><input type="text" class="form-control"
+                                                id="SecondaryInsurance" placeholder="Your Secondary Insurance"></div>
+                                        <div class="type-form2"><input type="text" class="form-control" id="DoctorsName"
+                                                placeholder="Doctors Name (treats you for diabetes)"></div>
+                                        <div class="type-form2"><input type="text" class="form-control"
+                                                id="PolicyNumber" placeholder="Your Policy Number/IDr"></div>
+                                        <button type="submit" class="type-form2" >Submit</button>
+                                    </form>
+                                    <div class="popup-footer">
+                                        <div style="font-weight: 600; margin-top: 35px;margin-bottom: 30px;">or
+                                            Call&nbsp;<a href="tel:8552340638"
+                                                style="color: rgba(255, 255, 255, 0.79);font-weight: 600;">(855)
+                                                234-0638</a></div>
+                                        <div><img src="img/hipaa-logo.jpg" alt="Hipaa"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gray-line"></div>
+                        <div>
+                            <div>*Co-payments, deductibles and some restrictions may apply.</div>
+                            <br />
+                            <div style="font-size: 32px;"><b>or Call</b>&nbsp;<a href="tel:8552340638"
+                                    style="color: rgba(0, 0, 0, 0.79); font-weight: bold;">(855) 234-0638</a></div>
+                            <br />
+                            <div>Phone lines are open from 9am EST to 5pm EST</div>
+                            <div>Monday to Friday</div>
+                            <br />
+                            <div>
+                                <img src="img/hipaa-logo.jpg" alt="Hippa">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-second">
+        <div class="fullContainer pad-top-bottom-20">
+            <div class="row width100p pad-top-bottom-20 mar-0 pad-left-right-10">
+                <div class="col-md-6 pad-top-bottom-20 mar-0 pad-left-right-10">
+                    <div class="imp-text-black" style="font-size:32px;">You could qualify for a Continuous Glucose
+                        Monitor at No or
+                        little out of pocket Cost to You*</div>
+                    <div class="blue-line"></div>
+                    <div class="ul-img">
+                        <ul>
+                            <li>Free Monthly Delivery to you door</li>
+                            <li>No subscriptionfee or hidden fees </li>
+                            <li>Quick and easy application </li>
+                            <li>On time shipping </li>
+                        </ul>
+                    </div>
+                    <div class="blue-line"></div>
+                    <div class="imp-text-black" style="font-size: 22px;">
+                        <div>Yes, We Are In-Network!</div>
+                        <div>Medicare, Humana, Uhc, Freedom, Florida Blue, Preferred Care, Wellcare And More....</div>
+                    </div>
+                </div>
+                <div class="col-md-6 pad-top-bottom-20 mar-0 pad-left-right-10">
+                    <div>
+                        <img src="img/Dexcom.png" alt="Dexcom">
+                    </div>
+                    <br />
+                    <div>
+                        <img src="img/libre.png" alt="Libre">
+                    </div>
+                    <div class="imp-text-gray">*Continuous Glucose Monitors are covered by Medicare and some insurance
+                        plans. Quantum
+                        Medical Supply is a direct supplier of CGMs. We directly bill insurance and medicare, so you
+                        have little or no out of pocket expense. Co-payments, deductibles and some restrictions may
+                        apply.</div>
+                    <br />
+                </div>
+            </div>
+            <div class="row mar-0 ">
+                <div class="col-md-6 pad-top-bottom-20">
+                    <a data-fancybox="Get Started with your FreeStyle Libre 14 day System"
+                        class="fancy" data-width="640"
+                        data-height="360"
+                        href="https://www.youtube.com/embed/QKi5T4uTGXk?autoplay=0&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;hd=1&amp;wmode=transparent">
+                        <img src="img/play.png" class="play-btn" alt="play">
+                        <img class="card-img-top img-fluid" src="img/sddefault.jpg" alt="first image for video">
+                    </a>
+                </div>
+                <div class="col-md-6 pad-top-bottom-20">
+                    <a data-fancybox="Hannah Manis" class="fancy"
+                        data-width="640" data-height="360"
+                        href="https://www.youtube.com/embed/xTe51DiakkE?autoplay=0&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;hd=1&amp;wmode=transparent">
+                        <img src="img/play.png" class="play-btn" alt="play">
+                        <img class="card-img-top img-fluid" src="img/sddefault(1).jpg" alt="secong image for video">
+                    </a>
+                </div>
+
+            </div>
+            <div class="mar-0 pad-left-right-10">
+                <img src="img/libre-banner.jpg" alt="Libre banner">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-three">
+        <div class="fullContainer pad-top-bottom-20">
+            <div
+                class="row width100p transform-bg-color shadow30 pad-left-right-40 pad-top-bottom-20 mar-0 pad-left-right-10">
+                <div class="section-three-title title-color">
+                    <b>How Does a Continuous Glucose Monitor Work? </b>
+                </div>
+                <div class="pad-top-bottom-20">
+                    <div>
+                        Glucose meters have been a revolutionary tool for diabetes blood sugar management.
+                        However, we’ve experienced an evolution in this field. A Continuous Glucose Monitor
+                        or (CGM) for short is a device that continuously tracks your blood sugar levels
+                        throughout the day and night.
+                    </div>
+                    <br />
+                    <div>
+                        By collecting readings every 5 to 15 minutes, this FDA approved device gives you
+                        a more complete picture of the state of your diabetes. The “more complete” data
+                        gives you superior information on the state of your sugars, in turn making it
+                        easier for you to manage your diabetes.
+                    </div>
+                </div>
+            </div>
+            <div class="pad-left-right-40 pad-top-bottom-20">
+            </div>
+            <div class="row width100p transform-bg-color shadow30 pad-left-right-40 pad-top-bottom-20 mar-0">
+                <div class="col-md-6">
+                    <div class="section-three-title title-color">
+                        <b>What Does a CGM Do? </b>
+                    </div>
+                    <div class="pad-top-bottom-20">
+                        <div>A CGM measures the amount of glucose circulating within the body.
+                            Different devices collect information in alternative ways by using
+                            small sensors to collect readings. In some devices, the sensor is
+                            placed directly under the skin of the belly. </div>
+                        <br />
+                        <div>Not to fear, this is a completely painless process. Alternatively,
+                            the sensor can adhere to the back of the arm.</div>
+                        <br />
+                        <div>As mentioned before, the monitor displays sugar levels at
+                            1-, 5-, 10-, or 15- minute intervals. Should your sugar drop
+                            below, or above a preset level, the monitor alarm will sound,
+                            alerting you that your sugar is out of nominal bonds.</div>
+                        <br />
+                        <div>In the past, only doctors had the ability to see
+                            collected by the CGM. Now, you can use this device
+                            as part of your at-home diabetes solution.</div>
+                        <br />
+                        <div>The data can be downloaded to your computer tablet,
+                            or smartphone - allowing you to see emerging
+                            or recurring patterns in your blood sugar.</div>
+                        <br />
+                        <div>The continuous monitoring on your part has the added
+                            benefit of helping your doctor create the best
+                            diabetes management plan, allowing for; </div>
+                        <br />
+                        <div class="ul-check">
+                            <ul>
+                                <li>Amount of insulin you should take </li>
+                                <li>An exercise plan that fits you </li>
+                                <li>Numbers of meals and snacks for each day </li>
+                                <li>​Correct medications and dose amounts. </li>
+                            </ul>
+                        </div>
+                        <br />
+                        <div>If you use an insulin pump, you’ll be able to link
+                            it to our CGM system for an integrated care solution.</div>
+                        <br />
+                        <div>With the new “sensor-augmented pump”, manual
+                            configuration previously required with the finger-prick
+                            methods will no longer be necessary.</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-three-title title-color">
+                        <b>Why Use s CGM? </b>
+                    </div>
+                    <div class="pad-top-bottom-20">
+                        <div>The CGM captures blood sugar readings throughout the entire day and night cycle. </div>
+                        <br />
+                        <div>The added benefit of capturing highs and lows throughout the whole week is; </div>
+                        <br />
+                        <div class="ul-check">
+                            <ul>
+                                <li>Recording of dangerously low overnight blood sugar levels that can go undetected
+                                </li>
+                                <li>Track high levels between meals </li>
+                                <li>Show early morning blood sugar spikes </li>
+                                <li>​​Describing how diet and exercise affect you </li>
+                                <li>​Determine if your treatment plan really works on a day-to-day basis </li>
+                            </ul>
+                        </div>
+                        <div>Your doctor may recommend a CGM if you have the following; </div>
+                        <br />
+                        <div class="ul-check">
+                            <ul>
+                                <li>Recuring highs and lows in your blood sugar levels without a clear reason </li>
+                                <li>Gestational diabetes, which can happen during pregnancy </li>
+                                <li>An insulin pump </li>
+                                <li>​​Severely low blood sugar levels, known as hypoglycemia, or very high levels,
+                                    called hyperglycemia </li>
+                            </ul>
+                        </div>
+                        <br />
+                        <div>The device may be used by children aged 2 and older. Recently the FDA
+                            approved the paring of smartphone apps with the CGM.</div>
+                        <br />
+                        <div>Unlike before, diabetes information can now be shared immediately.
+                            This gives a great advantage to parents and caregivers who can always
+                            be in the same place as the person with diabetes.</div>
+                        <br />
+                        <div>Overall, the CGM makes blood sugar monitoring more effortless,
+                            ultimately giving more freedom and future well-being to those living with diabetes.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fullContainer pad-top-bottom-20" style="text-align: center;">
+            <div class="pad-top-bottom-20 pad-left-right-10 toTop">
+                <a href="#Top" class="btn-click white-btn"><span>CLICK TO SEE IF YOU QUALIFY FOR CONTINUOUS GLUCOSE MONITOR
+                        COVERAGE</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-fourth">
+        <div class="fullContainer pad-top-bottom-20">
+            <div class="row width100p shadow30 pad-left-right-40 pad-top-bottom-20 mar-0">
+                <div class="pad-left-right-10">
+                    <div class="section-fourth-title title-color"><b>Incredible Testimonials</b></div>
+                    <div class="pad-top-bottom-20"><b>One diabetic who uses a Constant Glucose Monitor says:</b></div>
+                    <div>“As a diabetic using a CGM and one of the best parts about having one is understanding
+                        where your blood sugar is spiking from the different foods you eat. Normally you test
+                        before you eat and not after (without a CGM) but with one you would be able to see what
+                        is going on after you eat. EX. I had no idea if I drink a black coffee and dont take
+                        insulin my sugar increases. No carbs in it but I, like most others, have a sensitivity to it.”
+                    </div>
+                </div>
+            </div>
+            <div class="pad-left-right-40 pad-top-bottom-20">
+            </div>
+            <div class="row width100p shadow30 pad-left-right-40 pad-top-bottom-20 mar-0">
+                <div class="col-md-4 pad-top-bottom-20">
+                    <div class="person-name">
+                        <b>Chelsey’s Story</b>
+                    </div>
+                    <div class="person-img">
+                        <img src="img/1.jpg" alt="Chelsey">
+                    </div>
+                    <div class="person-quote">
+                        <b><i>“My A1c is the best it’s ever been.” </i></b>
+                    </div>
+                    <div class="person-content">
+                        <div>"I’ve lived with type 1 diabetes for 23 years. I’ve pricked
+                            myself countless times since I was a young child.</div>
+                        <br />
+                        <div>Denial quickly became a problem, and I decided I no longer wanted to test my
+                            glucose. Checking my glucose became work and It took a lot of extra energy and time.</div>
+                        <br />
+                        <div>When I discovered the FreesStyle Libre system, it made my life 100 times easier.
+                            I could check any time I wanted with a casual scan of the sensor.
+                            My compliance and management have improved immensely and my A1c is the best it’s ever been."
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pad-top-bottom-20">
+                    <div class="person-name">
+                        <b>Cindy’s Story</b>
+                    </div>
+                    <div class="person-img">
+                        <img src="img/2.jpg" alt="Cindy">
+                    </div>
+                    <div class="person-quote">
+                        <b><i>“I can lead an active life!” </i></b>
+                    </div>
+                    <div class="person-content">
+                        <div>"I was diagnosed with T2D in 2013 which
+                            I have managed successfully through exercise and diet.</div>
+                        <br />
+                        <div>The last year my A1C has started to rise.
+                            To determine the cause of the rise it was determined by my health
+                            team to try the FreeStyle Libre system to determine trending of glucose. </div>
+                        <br />
+                        <div>Initially, the plan was to do trending about every 3 months,
+                            but the freedom that the FreesStyle Libre system offered and
+                            the fact I did not have to prick my finger made this an invaluable part of my life.</div>
+                        <br />
+                        <div>Pairing reading around meals is so much easier and the software
+                            shows on a graph the interaction of food on your glucose. </div>
+                        <br />
+                        <div>The system ensures that I can lead an active life while participating in half marathons."
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pad-top-bottom-20">
+                    <div class="person-name">
+                        <b>Matteus's Story</b>
+                    </div>
+                    <div class="person-img">
+                        <img src="img/3.jpg" alt="Matteus">
+                    </div>
+                    <div class="person-quote">
+                        <b><i>This reader has an incredible story </i></b>
+                    </div>
+                    <div class="person-content">
+                        <div>After 17 years with diabetes, being able to simply scan
+                            to know my glucose level and whether it was falling or climbing was HUGE.</div>
+                        <br />
+                        <div>For the first time in years, I was able to truly follow
+                            my glucose and know exactly how insulin and activity impacted my numbers. </div>
+                        <br />
+                        <div>Whenever someone would stop to ask about the sensor on my arm,
+                            I would rejoice in telling them about this system. I would stop and
+                            check my glucose, showing them just how easy it is, and thus managing my diabetes. </div>
+                        <br />
+                        <div>Unfortunately, I turned 25 just months after getting this reader,
+                            and it is no longer affordable for me to use. </div>
+                        <br />
+                        <div>I am desperately trying to find a way to get back to using these sensors/this
+                            reader as my A1C was the best it ever was since getting T1D at the age of 7."</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-fifth">
+        <div class="fullContainer">
+            <div class="pad-top-bottom-20 pad-left-right-10 toTop">
+                <a href="#Top" class="btn-click blue-btn"><span>CLICK TO SEE IF YOU QUALIFY FOR CONTINUOUS GLUCOSE MONITOR
+                        COVERAGE</span></a>
+            </div>
+            <div>
+                <img src="img/cgm-logos.jpg" alt="Logos">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>NoCost CGM is a division of Quantum Medical.</div>
+        <div>Quantum Medical</div>
+        <div>1818 S Australian Ave Ste 301 West Palm Beach, Fl 33409</div>
+        <div>mail@nocostcgm.com</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script>
+        document.getElementById('fifthquestion-var1').addEventListener("click", function () {
+            document.querySelector('.overlay').style.display = "flex";
+        });
+        document.getElementById('fifthquestion-var2').addEventListener("click", function () {
+            document.querySelector('.overlay').style.display = "flex";
+        });
+
+        document.querySelector('.close').addEventListener("click", function () {
+            document.querySelector('.overlay').style.display = "none";
+        });
+
+        document.getElementById('firstquestion-var1').addEventListener("click", function () {
+            document.getElementById('firstquestion').style.display = "none";
+            document.getElementById('secondquestion').style.display = "block";
+
+        });
+        document.getElementById('firstquestion-var2').addEventListener("click", function () {
+            document.getElementById('firstquestion').style.display = "none";
+            document.getElementById('secondquestion').style.display = "block";
+        });
+        document.getElementById('firstquestion-var3').addEventListener("click", function () {
+            document.getElementById('firstquestion').style.display = "none";
+            document.getElementById('secondquestion').style.display = "block";
+        });
+
+        document.getElementById('secondquestion-var1').addEventListener("click", function () {
+            document.getElementById('secondquestion').style.display = "none";
+            document.getElementById('thirdquestion').style.display = "block";
+        });
+        document.getElementById('secondquestion-var2').addEventListener("click", function () {
+            document.getElementById('secondquestion').style.display = "none";
+            document.getElementById('thirdquestion').style.display = "block";
+        });
+        document.getElementById('secondquestion-var3').addEventListener("click", function () {
+            document.getElementById('secondquestion').style.display = "none";
+            document.getElementById('thirdquestion').style.display = "block";
+        });
+
+        document.getElementById('thirdquestion-var1').addEventListener("click", function () {
+            document.getElementById('thirdquestion').style.display = "none";
+            document.getElementById('fourthquestion').style.display = "block";
+        });
+        document.getElementById('thirdquestion-var2').addEventListener("click", function () {
+            document.getElementById('thirdquestion').style.display = "none";
+            document.getElementById('fourthquestion').style.display = "block";
+        });
+        document.getElementById('thirdquestion-var3').addEventListener("click", function () {
+            document.getElementById('thirdquestion').style.display = "none";
+            document.getElementById('fourthquestion').style.display = "block";
+        });
+
+        document.getElementById('fourthquestion-var1').addEventListener("click", function () {
+            document.getElementById('fourthquestion').style.display = "none";
+            document.getElementById('fifthquestion').style.display = "block";
+        });
+        document.getElementById('fourthquestion-var2').addEventListener("click", function () {
+            document.getElementById('fourthquestion').style.display = "none";
+            document.getElementById('fifthquestion').style.display = "block";
+        });
+    </script>
+    <script>
+                $(document).ready(function () {
+            // Add scrollspy to <body>
+            $('body').scrollspy({
+                target: ".toTop",
+                offset: 50
+            });
+
+            // Add smooth scrolling on all links inside the navbar
+            $(".toTop a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script>
+        //Validation
+        function validate(){
+            var FirstName = document.getElementById("first-name");
+            var LastName = document.getElementById("last-name");
+            var Address = document.getElementById("address");
+            var City = document.getElementById("city");
+            var State = document.getElementById("state");
+            var Country = document.getElementById("country");
+            var ZIP = document.getElementById("ZIP");
+            var Email = document.getElementById("email");
+            var DateofBirth = document.getElementById("DateofBirth");
+            var Phone = document.getElementById("phone");
+
+            var isValid = true;
+
+            if(isStringEmpty(FirstName.value)) {
+                FirstName.style.border="2px solid red";
+                isValid = false;
+            }
+            if(isStringEmpty(LastName.value)){
+                LastName.style.border="2px solid red";
+                isValid = false;
+            }
+            if(isStringEmpty(Address.value)){
+                Address.style.border = "2px solid red"
+                isValid = false;
+            }
+            if(isStringEmpty(City.value)){
+                City.style.border = "2px solid red"
+                isValid = false;
+            }
+            if(isStringEmpty(State.value)){
+                State.style.border = "2px solid red"
+                isValid = false;
+            }
+            if(isStringEmpty(Country.value)){
+                Country.style.border = "2px solid red"
+                isValid = false;
+            }
+            if(isStringEmpty(ZIP.value)){
+                ZIP.style.border = "2px solid red"
+                isValid = false;
+            }
+            if(isStringEmpty(Email.value)){
+                Email.style.border = "2px solid red"
+                isValid = false;
+            }
+            if(isStringEmpty(DateofBirth.value)){
+                DateofBirth.style.border = "2px solid red"
+                isValid = false;
+            }
+            if(isStringEmpty(Phone.value)){
+                Phone.style.border = "2px solid red"
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        function isStringEmpty(str) {
+            return (!str || str == '' || str == ' ' || 0 === str.length);
+        }
+
+    </script>
+</body>
+
+</html>
